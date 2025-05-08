@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARY HAIR SUPPLEMENTS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #000000;
+        overflow: hidden; /* Prevent scrollbars caused by animation */
+      }
+      header {
+        background-color: #e4e4e4;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      }
+      .welcome-message {
+        position: absolute;
+        width: 100%;
+        left: -100%; /* Start off the left side */
+        animation: move 15s linear infinite; /* Slower animation */
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: #191717;
+      }
+      @keyframes move {
+        0% {
+          left: -100%;
+          color: #b8b7be;
+        }
+        25% {
+          color: #fefefe;
+        }
+        50% {
+          left: 50%;
+          color: #000000;
+        }
+        75% {
+          color: #000000;
+        }
+        100% {
+          left: 100%;
+          color: #020203;
+        }
+      }
+      nav {
+        margin: 20px 0;
+      }
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: transform 0.3s;
+      }
+      nav a:hover {
+        background-color: white;
+      }
+      .container {
+        display: flex;
+        overflow-x: auto;
+        padding: 20px;
+        flex-direction: column;
+      }
+      section {
+        min-width: 300px;
+        margin: 0 15px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        display: none; /* Hide sections by default */
+      }
+      section.active {
+        display: block; /* Show active section */
+      }
+      section:hover {
+        transform: scale(1.05);
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      h2 {
+        color: #000000;
+      }
+      #home {
+        background-color: #ffffff; /* Light pink */
+      }
+      #about-product {
+        background-color: #ffffff; /* Light blue */
+        max-height: 400px; /* Set maximum height */
+        overflow-y: auto; /* Enable vertical scrolling */
+      }
+      #about-us {
+        background-color: #ffffff; /* Light orange */
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+      .contact-info {
+        margin-top: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-top: 10px;
+      }
+      input {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        padding: 10px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #f6f7ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="welcome-message">WELCOME TO MARY HAIR SUPPLEMENTS</div>
+      <h1>MARY HAIR SUPPLEMENTS</h1>
+      <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about-product')">About Product</a>
+        <a href="#" onclick="showSection('about-us')">About Us</a>
+        <a href="https://www.maryhairsupplements.com" target="_blank"
+          >Visit Our Website</a
+        >
+      </nav>
+    </header>
+
+    <div class="container">
+      <section id="home" class="active">
+        <h2>Welcome to MARY HAIR SUPPLEMENTS</h2>
+        <p>
+          At MARY HAIR SUPPLEMENTS, we are dedicated to transforming your hair
+          care experience. Our passionate team understands the struggles many
+          face with hair health and is committed to providing personalized
+          solutions tailored to your unique needs.
+        </p>
+        <p>
+          We prioritize customer care, ensuring you receive support and guidance
+          every step of the way. Join us on this journey to hair wellness and
+          discover the confidence that comes with radiant hair.
+        </p>
+      </section>
+
+      <section id="about-product">
+        <h2>About Our Product</h2>
+        <img
+          height="100px"
+          width="100px"
+          src="images.html/image3.jpg"
+          alt="NUTRAFOL HAIR SUPPLEMENT"
+        />
+        <p>
+          Our hair supplements are formulated with natural ingredients that
+          promote stronger hair, reduce hair shedding, and improve scalp health
+          while supporting effective hair growth.
+        </p>
+        <p><strong>Key Benefits:</strong></p>
+        <ul>
+          <li>
+            <strong>Promotes Stronger Hair:</strong> Fortified with essential
+            nutrients.
+          </li>
+          <li>
+            <strong>Reduces Hair Shedding:</strong> Helps retain your beautiful
+            locks.
+          </li>
+          <li>
+            <strong>Improved Scalp Health:</strong> Nourishes and rejuvenates
+            your scalp.
+          </li>
+          <li>
+            <strong>Effective Hair Growth:</strong> Supports healthy and vibrant
+            hair growth.
+          </li>
+        </ul>
+        <p><strong>How to Use:</strong></p>
+        <ol>
+          <li>Crush two pills.</li>
+          <li>
+            Add the crushed pills into the spray/hair oil/hair food of your
+            choice and let them dissolve.
+          </li>
+          <li>
+            Spray or apply directly on hair and scalp every day for 2-3 weeks
+            for best results.
+          </li>
+        </ol>
+
+        <p>CLIENT'S HAIR BEFORE TREATMENT</p>
+        <img
+          height="100px"
+          width="200px"
+          src="images.html/image1.jpg.jpg"
+          alt="A picture of our client with healthy, well taken care of hair, feeling confident about our product."
+        />
+        <p>CLIENT'S HAIR 3 MONTHS AFTER TREATMENT</p>
+        <img
+          height="100px"
+          width="200px"
+          src="images.html/image2.jpg.jpg"
+          alt="An image of our client showcasing healthy natural hair, exuding sophistication and confidence with our product."
+        />
+      </section>
+
+      <section id="about-us">
+        <h2>About Us</h2>
+        <p>
+          At MARY HAIR SUPPLEMENTS, we believe that everyone deserves to have
+          beautiful hair. Our dedicated team is passionate about creating
+          high-quality products that enhance your natural beauty. We strive to
+          provide not just supplements but a holistic approach to hair care.
+        </p>
+        <p>
+          We continuously innovate to bring you the best in hair health
+          solutions. Your satisfaction is our priority, and we are here to help
+          you achieve your hair goals.
+        </p>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>
+            Email:
+            <a href="mailto:maryhairSuppliments@gmail.com"
+              >maryhairSuppliments@gmail.com</a
+            >
+          </p>
+          <p>Phone: +266 56291878</p>
+          <p>
+            Follow us on Facebook:
+            <a
+              href="https://facebook.com/Maryhairsupplements.ls"
+              target="_blank"
+              >Mary Hair Supplements</a
+            >
+          </p>
+        </div>
+
+        <form
+          action="mailto:maryhairSuppliments@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <button type="submit">Send Email</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 MARY HAIR SUPPLEMENTS. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => {
+          section.classList.remove("active");
+        });
+        // Show the selected section
+        document.getElementById(sectionId).classList.add("active");
+      }
+    </script>
+  </body>
+</html>
